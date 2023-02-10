@@ -216,11 +216,11 @@ void reverseList(LLPtr currentPtr)
     puts("The reverse list is:");
     while(currentPtr->nextPtr!=NULL)
       currentPtr=currentPtr->nextPtr;
-  }
   while(currentPtr->pPtr!=NULL)
     {
       printf("%d --> ", currentPtr->data);
       currentPtr = currentPtr->pPtr;
     }
   printf("%d --> NULL\n",currentPtr->data);
+  }
 }
